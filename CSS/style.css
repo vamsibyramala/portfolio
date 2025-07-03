@@ -21,7 +21,8 @@
 }
 #home-page h1 {
     font-size: 5em;
-    text-align: center;
+    position: absolute;
+    top: 2%;
     color: white;
     font-family: smoothing, sans-serif;
     margin-bottom: 20px;
@@ -30,6 +31,8 @@
 #home-page p {
     font-size: 1.5em;
     text-align: center;
+    position: absolute;
+    top: 25%;
     color: white;
 }
 #home-page ul {
