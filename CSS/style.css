@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'treadmill';
+    src: url(../fonts/TreadMill-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'smoothing';
+    src: url(../fonts/Smoothing.ttf) format('truetype');
+}
 #home-page {
     height: 100vh;
     background-image: url(../images/vamsi.jpg);
@@ -12,9 +20,12 @@
     align-items: center;
 }
 #home-page h1 {
-    font-size: 3em;
+    font-size: 5em;
     text-align: center;
     color: white;
+    font-family: smoothing, sans-serif;
+    margin-bottom: 20px;
+
 }
 #home-page p {
     font-size: 1.5em;
