@@ -6,9 +6,16 @@
     font-family: 'smoothing';
     src: url(../fonts/Smoothing.ttf) format('truetype');
 }
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f0f0f0;
+}
 #home-page {
     height: 100vh;
     background-image: url(../images/vamsi.jpg);
+    opacity: 0.8;
     background-size: cover;
     background-position: center;
     color-interpolation-filters: auto;
@@ -21,11 +28,13 @@
 }
 #home-page h1 {
     font-size: 5em;
+    text-align: center;
     position: absolute;
     top: 10%;
     color: white;
     font-family: smoothing, sans-serif;
     margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
 
 }
 #home-page p {
