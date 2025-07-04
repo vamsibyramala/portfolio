@@ -10,6 +10,14 @@
     font-family: 'dancing';
     src: url(../fonts/DancingScript-Regular.otf) format('opentype');
 }
+@font-face {
+    font-family: 'precious';
+    src: url(../fonts/Precious.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'hamster';
+    src: url(../fonts/Hamster-Regular.ttf) format('truetype');
+}
 body {
     margin: 0;
     padding: 0;
@@ -27,8 +35,6 @@ body {
     background-blend-mode: multiply;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 #projects {
     height: 100vh;
@@ -72,12 +78,15 @@ body {
     margin: 0;
     display: flex;
     gap: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 .nav a {
     text-decoration: none;
     color: #f7f3f3;
     transition: color 0.3s ease;
-    size: 1.2em;
+    size: 8em;
 }
 .nav a:hover {
     color: #f3b711;
@@ -88,6 +97,10 @@ body {
     color: #f7f3f3;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     animation: fadeIn 1s ease-in-out;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #home-page p {
     font-family: dancing, cursive;
@@ -96,7 +109,68 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     animation: fadeIn 1s ease-in-out;
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#contact h2 {
+    font-family: hamster, sans-serif;
+    font-size: 1.5em;
+    color: #f7f3f3;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+.social-media a {
+    text-decoration: none;
+    color: #f7f3f3;
+    transition: color 0.3s ease;
+    size: 8em;
+}
+.social-media a:hover {
+    color: #f3b711;
+}
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+    color: #f7f3f3;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.contact-list li {
+    margin: 10px 0;
+}
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f7f3f3;
+    font-size: 0.8em;
+    text-align: center;
+}
+.contact-heading {
+    font-family: smoothing, sans-serif;
+    font-size: 5em;
+    color: #f7f3f3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: aliceblue;
+    border-radius: 10px;
 }
